@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Live from '../public/live.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTowerBroadcast, faTrash } from "@fortawesome/free-solid-svg-icons";
 
