@@ -3,7 +3,6 @@ import Footer from "@/components/layouts/footer"
 import Slide from "@/components/slide"
 import Twiter from "@/components/twiter/index"
 import Pub from "@/components/pub/index"
- // import Font Awesome CSS
  import "@fortawesome/fontawesome-svg-core/styles.css";
  import { config } from "@fortawesome/fontawesome-svg-core";
 
