@@ -3,8 +3,9 @@ import Footer from "@/components/layouts/footer"
 import Slide from "@/components/slide"
 import Twiter from "@/components/twiter/index"
 import Pub from "@/components/pub/index"
- import "@fortawesome/fontawesome-svg-core/styles.css";
- import { config } from "@fortawesome/fontawesome-svg-core";
+import News from "@/components/news/index"
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
 
 
  config.autoAddCss = false;
@@ -16,7 +17,8 @@ export default function Home() {
     <Slide></Slide>
     <Twiter></Twiter>
     <Pub></Pub>
-    <Footer></Footer>
+    <News></News>
+    {/* <Footer></Footer> */}
     </>
   );
 }
