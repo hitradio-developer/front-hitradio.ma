@@ -8,8 +8,8 @@ export default function twiter() {
     return (
       <>
       <div className="relative min-h-screen flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12">
-        <div className="min-h-28 ">
-          <div className="max-w-screen-lg mx-auto py-4">
+        <div className="">
+          <div className="max-w-screen-lg mx-auto ">
             <div className="flex gap-6">
               <div className="bg-white w-1/3 shadow rounded-lg overflow-hidden img-twiter-hover">
                 <Link href="">
