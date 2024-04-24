@@ -57,10 +57,13 @@ body {
 .img-slide{
   width: 100%;
 }
-
+.twiter{
+  margin: 5% 0%;
+}
 .img-twiter{
   height: 526px;
   box-shadow: 10px 10px 5px lightblue;
+  border-radius: 3%;
   
 }
 .img-twiter-hover:hover {
@@ -100,9 +103,13 @@ body {
     height: 85%;
 }
 
-.news h2{
+.news h2 {
     font-size: 30px;
     font-weight: 600;
+}
+.podcast h2 {
+  font-size: 30px;
+  font-weight: 600;
 }
 .news h3{
   margin-top: 4px;
@@ -124,4 +131,12 @@ body {
 }
 .img-plus{
   display: initial;
+}
+.podcast-img{
+  border-radius: 3%;
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1292px;
+  }
 }
