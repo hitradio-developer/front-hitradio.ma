@@ -9,9 +9,9 @@ export default function news() {
     return (
       <>
       <div className='news'>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-2">
             <h2 className='py-8'>NEWS.</h2>
-            <div className="text-center grid grid-cols-3 gap-4 mb-8">
+            <div className="text-center grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                 <div className="">
                     <Image className="transition duration-300 ease-in-out hover:scale-110 news-img"
                      src={News1} alt="Picture of the News" />
@@ -29,15 +29,11 @@ export default function news() {
                     <h4>Apple Promet une Solution Rapide</h4>
                 </div>
                 <div className="">
-                    
-                    
                 </div>
                 <div className="">
-                    
-                    
                 </div>
                 <div className="">
-                    <Image className="img-plus flex items-end py-12 mr-4" src={NextNews} alt="Picture of the News" width={40} />
+                    <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="Picture of the News" width={40} />
                     <span>PLUS DE NEWS</span>
                 </div>
             </div>
