@@ -10,7 +10,8 @@ export default function twiter() {
       <>
           <div className='twiter'>
             <div className="container mx-auto">
-               <div className="text-center grid grid-cols-4 gap-4 mb-8">
+               <div className="text-center grid grid-cols-3 sm:grid-cols-6 gap-4 mb-8">
+                <div></div>
                   <div>
                   <Link href="">
                     <Image src={image1} className="transition duration-300 ease-in-out hover:scale-110 img-twiter " alt="Picture of the twiter" />
@@ -31,6 +32,7 @@ export default function twiter() {
                     <Image src={image1} className="transition duration-300 ease-in-out hover:scale-110 img-twiter " alt="" />
                     </Link>
                   </div>
+                  <div></div>
                </div>
 
             </div>
