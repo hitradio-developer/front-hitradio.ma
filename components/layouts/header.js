@@ -1,92 +1,111 @@
-import Link from 'next/link'
+"use client";
+
+import Image from 'next/image';
+import React, { useState } from 'react';
+import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTowerBroadcast, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faTowerBroadcast, faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
+import { Transition } from '@headlessui/react';
 
-<i className="fa-solid faSignalStream"></i>
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-export default function Header() {
-    return (
-      <>
-<nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-    <div className="flex flex-wrap items-center justify-between px-4 mx-auto">
-        <div href="#" className="flex items-center">
-            <img src="https://www.hitradio.ma/sites/default/files/small-logo-hitradio_0.png" className="h-6 mr-3 sm:h-9 logo" alt="Landwind Logo" />
-            
-        </div>
-        <div className="flex items-center lg:order-2">
-            <div className="hidden mt-2 mr-4 sm:inline-block">
-                <span></span>
+  return (
+    <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center">
+          <div className="flex items-center">
+            <div className="flex-shrink-0 flex items-center w-20 md:w-32">
+                <Image
+                    src="/logo/small-logo-hitradio_0.png" // Path to your image in the public directory
+                    alt="Landwind Logo"
+                    width={125} // Set the width of the image
+                    height={125} // Set the height of the image
+                />
             </div>
-
-             <button data-collapse-toggle="mobile-menu-2" type="button"
-				className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-				aria-controls="mobile-menu-2" aria-expanded="true">
-				<span className="sr-only">Open main menu</span>
-				<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<path fillRule="evenodd"
-						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-						clipRule="evenodd"></path>
-				</svg>
-				<svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-					<path fillRule="evenodd"
-						d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-						clipRule="evenodd"></path>
-				</svg>
-			</button>
-        </div>
-        <div className="items-left justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 menu cf" >
-                <li>
-                    <Link href="#"
-                        className="block py-2 pl-3 pr-4 text-white font-bold bg-purple-700 
-                        rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                        aria-current="page">RADIOS</Link>
-                </li>
-                <li>
-                    <Link href="#"
-                        className="block py-2 pl-3 pr-4 text-white font-bold bg-purple-700 
-                        rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white">
-                        PODCASTS</Link>
-                </li>
-                <li>
-                    <Link href="#"
-                        className="block py-2 pl-3 pr-4 text-white font-bold bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white">
-                        NEWS</Link>
-                </li>
-                <li>
-                    <Link href="#"
-                        className="block py-2 pl-3 pr-4 text-white font-bold bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white">
-                        ÉVÉNEMENTS</Link>
-                </li>
-                <li>
-                    <Link href="#"
-                        className="block py-2 pl-3 pr-4 text-white font-bold bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white">
-                            JEUX</Link>
-                </li>
-                <li>
-                    <Link href="#"
-                        className="block py-2 pl-3 pr-4 text-white font-bold bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white">
-                        PLUS</Link>
-                </li>
-            </ul>
-        </div>
-        
-       
+            <div className="hidden md:block">
+              <div className="ml-10 flex items-baseline">
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base" aria-current="page">RADIOS</Link>
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PODCASTS</Link>
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">NEWS</Link>
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">ÉVÉNEMENTS</Link>
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">JEUX</Link>
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PLUS</Link>
+              </div>
+            </div>
+          </div>
+          <div>
             <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full header-btn">
-            <FontAwesomeIcon icon={faTowerBroadcast} className="fas fa-check mr-2" ></FontAwesomeIcon> LIVE
+              <FontAwesomeIcon icon={faTowerBroadcast} className="fas fa-check mr-2" ></FontAwesomeIcon> LIVE
+            </button>  
+          </div>
+          <div>
+            <Link href="#" className='btn btn-primary rounded-full bg-gray-500 text-white hover:bg-gray-300 outline-none border-none'>NOS FRÉQUENCES</Link>
+          </div>
+          <div className="hidden md:block">
+            <div className="ml-4 flex items-center md:ml-6 size-7">
+              <button onClick={() => setIsSearchOpen(!isSearchOpen)} className="text-gray-400 hover:text-red-500 focus:outline-none  transition duration-150 ease-in-out text-2xl">
+                {!isSearchOpen ? <FontAwesomeIcon icon={faMagnifyingGlass} /> : <FontAwesomeIcon icon={faXmark} />}  
+              </button>
+            </div>
+          </div>
+          <div className="-mr-2 flex md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center rounded-md text-gray-400 hover:text-red-500 focus:outline-none transition duration-150 ease-in-out text-2xl">
+              {!isOpen ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faXmark} />}  
             </button>
-            <input className="border border-gray-300 placeholder-current h-10 px-5 pr-16  rounded-lg text-sm focus:outline-none dark:bg-gray-500 dark:border-gray-50 dark:text-gray-200 " type="search" name="search" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+      <Transition
+        show={isSearchOpen}
+        enter="transition ease-out duration-100 transform top-0 absolute"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition ease-in duration-75 transform"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div ref={ref} className="absolute mt-2 inset-x-0 p-2 transition transform origin-top-right hidden md:block">
+            <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div className="flex items-center">
+                <input type="text" className="w-full border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 rounded-md py-4 px-5" placeholder="Search..." />
+              </div>
+            </div>
+          </div>
+        )}
+      </Transition>
+      <Transition
+        show={isOpen}
+        enter="duration-150 ease-out"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="duration-100 ease-in"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div ref={ref} className="md:hidden">
+            <div className="px-2 pt-2 pb-3 sm:px-3">
+                <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base" aria-current="page">RADIOS</Link>
+                <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PODCASTS</Link>
+                <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">NEWS</Link>
+                <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">ÉVÉNEMENTS</Link>
+                <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">JEUX</Link>
+                <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PLUS</Link>
+            </div>
+            <div className="pt-4 pb-3 border-t border-gray-700">
+              <div className="px-5 flex items-center">
+                <input type="text" className="w-full border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 rounded-md py-2 px-3" placeholder="Search..." />
+              </div>
+            </div>
+          </div>
+        )}
+      </Transition>
+    </nav>
+  );
+};
+
+export default Header;
             
-    </div>
-</nav>
-
-      </>
-    );
-  }
-  
-
-
-
-
-
-
