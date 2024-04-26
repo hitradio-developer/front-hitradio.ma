@@ -55,6 +55,7 @@ body {
   margin-right: 21px;
 }
 .img-slide{
+  height: 399px;
   width: 100%;
 }
 .twiter{
@@ -139,7 +140,7 @@ body {
 }
 @media (min-width: 1536px) {
   .container {
-    max-width: 1292px;
+    max-width: 1125px;
   }
 }
 
@@ -162,4 +163,22 @@ body {
     width: 126px;
     height: 125px;
     color: transparent;
+}
+.event{
+  background-image: url("../public/logo/event2.png");
+ /* background-color: #e30613; */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+.event-evenments{
+  margin-top: 6%;
+}
+.event h2{
+  position: absolute;
+  margin-top: -39px;
+  color: white;
+  font-size: clamp(1.6rem, 1.75vw, 0rem);
+  /* margin: 5px 10px; */
+  font-family: montserrat, sans-serif;
 }
