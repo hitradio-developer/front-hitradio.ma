@@ -7,6 +7,7 @@ import News from "@/components/news/index"
 import Podcast from "@/components/podcast/index"
 import Classement from "@/components/classement/index"
 import Video from '@/components/video/index'
+import Event from '@/components/event/index'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
@@ -24,6 +25,7 @@ export default function Home() {
     <Podcast></Podcast>
     {/* <Classement></Classement> */}
     <Video></Video>
+    <Event></Event>
     {/* <Footer></Footer> */}
     </>
   );
