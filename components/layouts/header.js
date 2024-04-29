@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faTowerBroadcast, faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faPlay, faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Transition } from '@headlessui/react';
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center w-20 md:w-32">
@@ -35,26 +35,32 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div>
-            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full header-btn">
-              <FontAwesomeIcon icon={faTowerBroadcast} className="fas fa-check mr-2" ></FontAwesomeIcon> LIVE
-            </button>  
+          <div className="right-header flex justify-between items-center gap-2 sm:gap-4 ">
+              <div>
+                <button className="text-red-700 font-bold flex items-center gap-2 sm:gap-4">
+                 LIVE <div className='flex items-center justify-center rounded-full bg-gray-500 w-12 h-12'><FontAwesomeIcon icon={faPlay} className='text-white' /> </div>
+                </button>  
+              </div>
+              <div>
+                <Link href="#" className='btn btn-primary px-4 sm:px-8 rounded-full bg-gray-500 text-white hover:bg-transparent hover:border-red-700 hover:text-red-700  outline-none border-gray-500'>NOS FRÉQUENCES</Link>
+              </div>
+              <div className="hidden md:block">
+                <div className="ml-4 flex items-center md:ml-6 size-7">
+                  <button onClick={() => setIsSearchOpen(!isSearchOpen)} className="text-gray-400 hover:text-red-500 focus:outline-none  transition duration-150 ease-in-out text-2xl">
+                    {!isSearchOpen ? <FontAwesomeIcon icon={faMagnifyingGlass} /> : <FontAwesomeIcon icon={faXmark} />}  
+                  </button>
+                </div>
+              </div>
+              <div className="-mr-2 flex md:hidden">
+                <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center rounded-md text-gray-400 hover:text-red-500 focus:outline-none transition duration-150 ease-in-out text-2xl">
+                  {!isOpen ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faXmark} />}  
+                </button>
+              </div>
           </div>
-          <div>
-            <Link href="#" className='btn btn-primary rounded-full bg-gray-500 text-white hover:bg-gray-300 outline-none border-none'>NOS FRÉQUENCES</Link>
-          </div>
-          <div className="hidden md:block">
-            <div className="ml-4 flex items-center md:ml-6 size-7">
-              <button onClick={() => setIsSearchOpen(!isSearchOpen)} className="text-gray-400 hover:text-red-500 focus:outline-none  transition duration-150 ease-in-out text-2xl">
-                {!isSearchOpen ? <FontAwesomeIcon icon={faMagnifyingGlass} /> : <FontAwesomeIcon icon={faXmark} />}  
-              </button>
-            </div>
-          </div>
-          <div className="-mr-2 flex md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center rounded-md text-gray-400 hover:text-red-500 focus:outline-none transition duration-150 ease-in-out text-2xl">
-              {!isOpen ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faXmark} />}  
-            </button>
-          </div>
+          
+         
+          
+          
         </div>
       </div>
       <Transition
