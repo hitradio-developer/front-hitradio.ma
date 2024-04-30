@@ -1,42 +1,161 @@
-import Image from 'next/image'
-import News1 from '../../public/images/news4.jpeg'
-import News2 from '../../public/images/news2.jpeg'
-import News3 from '../../public/images/news3.jpeg'
-import NextNews from '../../public/logo/Arrow-3x.png'
 
+
+import Image from 'next/image'
+import Video1 from '../../public/video/video1.jpg'
+import Video2 from '../../public/video/video2.jpeg'
+import Video3 from '../../public/video/vide3.jpeg'
+import NextNews from '../../public/logo/Arrow-3x.png'
+import Play from '../../public/logo/Play.png'
 
 export default function classement() {
     return (
       <>
-      <div className='news'>
-        <div className="container mx-auto">
-            <h2 className='py-8'>CLASSEMENT.</h2>
-            <div className="grid grid-cols-3 gap-4 mb-8">
-                <div class="grid grid-cols-3 grid-rows-3 gap-4">
-                    <div>1.</div> 
-                    <Image className="transition duration-300 ease-in-out hover:scale-110 news-img"
-                     src={News1} alt="Picture of the News" />
-                     <div>Name Artiste 
-                        <span>title of sing</span> 
-                     </div> 
-                   
-                </div>
-                <div className="">
-                    <div className='col-span-1'>1.</div> <Image className="transition duration-300 ease-in-out hover:scale-110 news-img col-span-3"
-                     src={News1} alt="Picture of the News" /><span>Name Artiste</span> <span>title of sing</span>
-                </div>
-                <div className="">
-                    <span>1.</span> <Image className="transition duration-300 ease-in-out hover:scale-110 news-img"
-                     src={News1} alt="Picture of the News" /><span>Name Artiste</span> <span>title of sing</span>
-                </div>
-                <div className=""></div>
-                <div className=""></div>
-                <div className="">
-                    <Image className="img-plus flex items-end py-12 mr-4" src={NextNews} alt="Picture of the News" width={40} />
-                    <span>PLUS DE NEWS</span>
+      <div className='news classement'>
+        <div className="container mx-auto px-2">
+            <h2 className='py-4'>CLASSEMENT.</h2>
+            <div class="max-w-screen-xl mx-auto relative">
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-10">
+                    
+                    <div class="sm:col-span-2 lg:col-span-4">
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">1</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative shadow-lg" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px] "
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">2</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">3</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2 lg:col-span-4">
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">4</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">5</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">6</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2 lg:col-span-4">
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">7</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">8</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-3 pb-3">
+                            <div class="text-sm m-4">
+                                <p class="text-gray-600 text-3xl">9</p>
+                            </div>
+                            <a href="#" class="inline-block mr-3">
+                                <div class="max-w-[110px] bg-cover bg-center relative" >
+                                <Image className="w-full relative z-0 rounded-lg transition-all duration-300 h-[94px]"
+                                src={Video1} alt="Picture of the Videos" />
+                                </div>
+                            </a>
+                            <div class="text-sm">
+                                <a href="#" class="text-gray-900 font-medium hover:text-indigo-600 leading-none">JEADY JAY HOLY FADA.</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div className='plus'>
+                <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="Picture of the News" width={40} />
+                <span>PLUS DE CLASSEMENT</span>
+            </div>
         </div>
+       
       </div>
       </>
     );
