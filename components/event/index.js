@@ -15,7 +15,7 @@ export default function event() {
         <div className="container mx-auto px-5 py-2">
             <div className="flex flex-wrap sm:m-2 md:-m-2">
                 <div className='w-full sm:w-1/2 py-4'>
-                    <h2>EVÉNEMENTS.</h2>
+                    <h2 className='ml-2'>Evénements</h2>
                     <div className="flex flex-wrap event-evenments">
                         <div className="w-1/2 p-1 md:p-2 ">
                             <Image
@@ -40,11 +40,11 @@ export default function event() {
                     </div>
                     <div className='plus-event'>
                         <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="Picture of the News" width={40} />
-                        <span>PLUS DE NEWS</span>
+                        <span>PLUS D EVÉNEMENTS </span>
                     </div>
                 </div>
                 <div className='w-full sm:w-1/2 py-4'>
-                        <h2>CONCERTS.</h2>
+                        <h2 className='ml-2'>Concerts</h2>
                     <div className="flex flex-wrap  event-evenments">
                         <div className="w-full p-1 md:p-2 img-first-event">
                             <Image
@@ -68,7 +68,7 @@ export default function event() {
                     </div>
                     <div className='plus-event'>
                         <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="Picture of the News" width={40} />
-                        <span>PLUS DE NEWS</span>
+                        <span>PLUS DE CONCERTS</span>
                     </div>
                 </div>
             </div>

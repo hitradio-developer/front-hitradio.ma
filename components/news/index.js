@@ -9,17 +9,17 @@ import NextNews from '../../public/logo/Arrow-3x.png'
 export default function news() {
     return (
       <>
-      <div className='news'>
-        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 relative">
-            <h2 className='py-4'>NEWS.</h2>
+      <div className='news web-radio'>
+        <div class="container max-w-screen-xl mx-auto p-5 relative">
+            <h2 className='py-4'>News</h2>
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
            
                 <div class="sm:col-span-5">
                     <a href="#">
-                        <div class="bg-cover text-center overflow-hidden img-news-first"
+                        <div class="bg-cover text-center duration-300 hover:opacity-50 overflow-hidden img-news-first"
                             // style={{minHeight: '300px', backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/never-trumpers-2020-election-01.jpg') }}
                             title="Woman holding a mug">
-                                 <Image className="transition duration-300 ease-in-out news-img"
+                                 <Image className="transition duration-300 ease-in-out news-img "
                                 src={News1} alt="Picture of the News" />
                         </div>
                     </a>
@@ -37,7 +37,7 @@ export default function news() {
                 <div class="sm:col-span-7 grid grid-cols-2 lg:grid-cols-3 gap-5">
                     <div class="">
                         <a href="#">
-                            <div class="h-40 bg-cover text-center overflow-hidden"
+                            <div class="h-40 bg-cover text-center overflow-hidden duration-300 hover:opacity-50"
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
@@ -50,7 +50,7 @@ export default function news() {
                     </div>
                     <div class="">
                         <a href="#">
-                            <div class="h-40 bg-cover text-center overflow-hidden"
+                            <div class="h-40 bg-cover text-center overflow-hidden duration-300 hover:opacity-50"
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/06/GettyImages-1222922545.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
@@ -63,7 +63,7 @@ export default function news() {
                     </div>
                     <div class="">
                         <a href="#">
-                            <div class="h-40 bg-cover text-center overflow-hidden"
+                        <div class="h-40 bg-cover text-center overflow-hidden duration-300 hover:opacity-50"
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/American-Flag.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
@@ -76,7 +76,7 @@ export default function news() {
                     </div>
                     <div class="">
                         <a href="#">
-                            <div class="h-40 bg-cover text-center overflow-hidden"
+                        <div class="h-40 bg-cover text-center overflow-hidden duration-300 hover:opacity-50"
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/06/GettyImages-1222922545.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out news-img"
@@ -89,7 +89,7 @@ export default function news() {
                     </div>
                     <div class="">
                         <a href="#">
-                            <div class="h-40 bg-cover text-center overflow-hidden"
+                        <div class="h-40 bg-cover text-center overflow-hidden duration-300 hover:opacity-50"
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/American-Flag.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
@@ -101,7 +101,7 @@ export default function news() {
                     </div>
                     <div class="">
                         <a href="#">
-                            <div class="h-40 bg-cover text-center overflow-hidden"
+                        <div class="h-40 bg-cover text-center overflow-hidden duration-300 hover:opacity-50"
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
@@ -117,7 +117,7 @@ export default function news() {
             </div>
             <div className='plus'>
                     <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="Picture of the News" width={40} />
-                    <span>PLUS DE VIDEOS</span>
+                    <span>PLUS DE NEWS</span>
                 </div>
         </div>
       </div>

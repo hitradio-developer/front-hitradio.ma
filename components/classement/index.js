@@ -12,7 +12,7 @@ export default function classement() {
       <>
       <div className='news classement'>
         <div className="container mx-auto px-2">
-            <h2 className='py-4'>CLASSEMENT.</h2>
+            <h2 className='py-4'>Classement</h2>
             <div class="max-w-screen-xl mx-auto relative">
                 <div class="grid grid-cols-1 sm:grid-cols-12 gap-10">
                     

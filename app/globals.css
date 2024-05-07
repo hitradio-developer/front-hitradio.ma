@@ -16,6 +16,7 @@
 }
 
 body {
+  
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -58,9 +59,7 @@ body {
   height: 399px;
   width: 100%;
 }
-.twiter{
-  margin: 5% 0%;
-}
+
 .img-twiter{
   height: 363px;
   box-shadow: 10px 10px 5px #91979996;
@@ -141,7 +140,9 @@ body {
 .plus-event{
   text-align: end;
   color: white;
-
+}
+.plus-red{
+  color: #e30613;
 }
 .img-plus{
   display: initial;
@@ -157,12 +158,15 @@ body {
 }
 
 .vides-img{
-  opacity: 0.5;
+  
   border-radius: 3%;
   margin-left: auto;
   margin-right: auto;
   width: 98%;
-  height: 79%;
+  height: 100%;
+}
+.vides-img :hover{
+  opacity: 0.5;
 }
 .paly-video{
     /* width: 24px; */
@@ -203,7 +207,7 @@ body {
   max-height: 290px;
 }
 .event h2{
-    text-align: center;
+    /* text-align: center; */
     color: white;
     font-size: 30px;
     font-weight: 600;
@@ -217,3 +221,138 @@ body {
 .plus img{
   box-shadow:none
 }
+.podcast-first{
+
+}
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.image-web-radio{
+  background-image: url('https://images.alphacoders.com/116/1169862.jpg')
+}
+
+
+
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (6*300px)));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container .carousel-items {
+    animation: carouselAnim 60s infinite alternate linear;
+  }
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (5*300px)));
+    }
+  }
+}
+
+.carousel-focus:hover {
+  transition: all 0.8s;
+  transform: scale(1.1);
+}
+.web-radio{
+  background-color: #edf2f7;
+}
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+
+
+.MultiCarousel {
+	float: left;
+	overflow: hidden;
+	padding: 15px;
+	width: 100%;
+	position: relative;
+}
+.MultiCarousel .MultiCarousel-inner {
+	transition: 1s ease all;
+	float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item {
+	float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background: #f1f1f1;
+	color: #666;
+}
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+	position: absolute;
+	border-radius: 50%;
+	top: calc(50% - 20px);
+}
+/******* Bnt Full********
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%; 
+    height: 80%;
+    top: 24px;
+}**/
+
+.MultiCarousel .leftLst {
+	left: 0;
+}
+.MultiCarousel .rightLst {
+	right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+	pointer-events: none;
+	background: #ccc;
+}
+
+

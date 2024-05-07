@@ -16,7 +16,7 @@ const Header = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center w-20 md:w-32">
+            <div className="flex-shrink-0 flex items-center w-20 md:w-24">
                 <Image
                     src="/logo/small-logo-hitradio_0.png" // Path to your image in the public directory
                     alt="Landwind Logo"
@@ -29,7 +29,7 @@ const Header = () => {
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base" aria-current="page">RADIOS</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PODCASTS</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">NEWS</Link>
-                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">ÉVÉNEMENTS</Link>
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">EVÉNEMENTS</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">JEUX</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PLUS</Link>
               </div>

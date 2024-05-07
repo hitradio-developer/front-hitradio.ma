@@ -3,7 +3,7 @@ import Podcats1 from '../../public/podcast/podcats1.jpeg'
 import Podcats2 from '../../public/podcast/podcats2.jpeg'
 import Podcats3 from '../../public/podcast/podcats3.jpeg'
 import Podcats4 from '../../public/podcast/podcats4.jpeg'
-import NextNews from '../../public/logo/Arrow-3x.png'
+import NextNews from '../../public/logo/Arrow_Red.png'
 
 
 export default function podcast() {
@@ -11,8 +11,8 @@ export default function podcast() {
       <>
     <div className="podcast">
         <div className="container mx-auto  px-2">
-            <h2 className='py-4'>PODCASTS.</h2>
-            <div className="text-center grid grid-cols-1 sm:grid-cols-4 gap-4 mb-8">
+            <h2 className='py-4'>Podcasts</h2>
+            <div className="text-center grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
                 <div className="">
                     <Image className="transition duration-300 ease-in-out hover:scale-110 podcast-img"
                      src={Podcats1} alt="Picture of the News" />
@@ -36,7 +36,7 @@ export default function podcast() {
                 </div>
                 <div className='plus'>
                     <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="Picture of the News" width={40} />
-                    <span>PLUS DE PODCASTS</span>
+                    <span className='plus-red'>PLUS DE PODCASTS</span>
                 </div>
         </div>
     </div>
