@@ -8,8 +8,8 @@ import image3 from '../../public/twiter/image3.jpeg'
 export default function twiter() {
     return (
       <>
-          <div className='twiter'>
-            <div className="container mx-auto">
+          <div className='news'>
+           <div className="container mx-auto px-2 mt-4">
                <div className="text-center grid grid-cols-3 sm:grid-cols-6 gap-4 mb-8">
                 <div></div>
                   <div>

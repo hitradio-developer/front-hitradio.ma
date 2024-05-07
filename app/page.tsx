@@ -6,8 +6,10 @@ import Pub from "@/components/pub/index"
 import News from "@/components/news/index"
 import Podcast from "@/components/podcast/index"
 import Classement from "@/components/classement/index"
-import Video from '@/components/video/index'
-import Event from '@/components/event/index'
+import Video from '@/components/video/index';
+import Event from '@/components/event/index';
+import WebRadio from '@/components/webRadio/index';
+import Operation from '@/components/operations/index';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
@@ -23,9 +25,11 @@ export default function Home() {
     <Pub></Pub>
     <News></News>
     <Podcast></Podcast>
-    {/* <Classement></Classement> */}
+    <Classement></Classement>
     <Video></Video>
+    <WebRadio></WebRadio>
     <Event></Event>
+    {/* <Operation></Operation> */}
     {/* <Footer></Footer> */}
     </>
   );
