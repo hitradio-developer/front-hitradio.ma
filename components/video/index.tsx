@@ -13,12 +13,11 @@ export default function videos() {
       <div className='news bg-gray-300'>
         <div className="container mx-auto px-2">
             <h2 className='py-4'>Vidéos</h2>
-            <div class="max-w-screen-xl mx-auto relative">
-                <div class="grid grid-cols-1 sm:grid-cols-12 gap-10">
-                    <div class="sm:col-span-6 lg:col-span-7">
+            <div className="max-w-screen-xl mx-auto relative">
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-10">
+                    <div className="sm:col-span-6 lg:col-span-7">
                         <a href="#">
-                            <div class=" bg-cover text-center overflow-hidden rounded-lg relative h-96" 
-                             
+                            <div className="bg-cover text-center overflow-hidden rounded-lg relative h-96 image-container"
                             title="Woman holding a mug">
                                 <Image className="w-full h-auto relative z-0 transition-all duration-300 hover:opacity-50 vides-img"
                                 src={Video2} alt="Picture of the Videos" />
@@ -28,21 +27,21 @@ export default function videos() {
                             </div>
                         </a>
                         <div
-                            class="mt-3 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
-                            <div class="">
+                            className="mt-3 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                            <div className="">
                                 
-                            <a href="#" class="block text-gray-900 font-bold text-2xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Revenge
+                            <a href="#" className="block text-gray-900 font-bold text-2xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Revenge
                                 of the Never Trumpers
                             </a>
-                                <p class="text-gray-700 text-base mt-2">Meet the Republican dissidents fighting to push Donald Trump
+                                <p className="text-gray-700 text-base mt-2">Meet the Republican dissidents fighting to push Donald Trump
                                 out of office—and reclaim their party</p>
                             </div>
                         </div>
                     </div>
-                    <div class="sm:col-span-6 lg:col-span-5">
-                        <div class="flex items-start mb-3 pb-3">
-                            <a href="#" class="inline-block mr-3">
-                                <div class="w-64 h-30 bg-cover bg-center relative" >
+                    <div className="sm:col-span-6 lg:col-span-5">
+                        <div className="flex items-start mb-3 pb-3">
+                            <a href="#" className="inline-block mr-3">
+                                <div className="w-64 h-30 bg-cover bg-center relative" >
                                 <Image className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110 vides-img"
                                     src={Video1} alt="Picture of the Videos" />
                                 <div className=''>
@@ -50,21 +49,21 @@ export default function videos() {
                                 </div>
                                 </div>
                             </a>
-                            <div class="text-sm mt-2">
+                            <div className="text-sm mt-2">
                                
-                                <a href="#" class="text-gray-900 font-bold hover:text-indigo-600 leading-5">
+                                <a href="#" className="text-gray-900 font-bold hover:text-indigo-600 leading-5">
                                     <div>Cristiano Ronaldo :
                                     <p className=''> of Juventus FC looks dejected during the...</p> 
                                     </div>
                                 </a>
-                                <div class="flex items-end">
-                                    <p class="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
+                                <div className="flex items-end">
+                                    <p className="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-start mb-3 pb-3">
-                            <a href="#" class="inline-block mr-3">
-                                <div class="w-64 h-30 bg-cover bg-center relative" >
+                        <div className="flex items-start mb-3 pb-3">
+                            <a href="#" className="inline-block mr-3">
+                                <div className="w-64 h-30 bg-cover bg-center relative" >
                                 <Image className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110 vides-img"
                                     src={Video2} alt="Picture of the Videos" />
                                 <div className=''>
@@ -72,21 +71,21 @@ export default function videos() {
                                 </div>
                                 </div>
                             </a>
-                            <div class="text-sm mt-2">
+                            <div className="text-sm mt-2">
                                
-                                <a href="#" class="text-gray-900 font-bold hover:text-indigo-600 leading-5">
+                                <a href="#" className="text-gray-900 font-bold hover:text-indigo-600 leading-5">
                                     <div>Cristiano Ronaldo :
                                     <p className=''> of Juventus FC looks dejected during the...</p> 
                                     </div>
                                 </a>
-                                <div class="flex items-end">
-                                    <p class="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
+                                <div className="flex items-end">
+                                    <p className="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-start mb-3 pb-3">
-                            <a href="#" class="inline-block mr-3">
-                                <div class="w-64 h-30 bg-cover bg-center relative" >
+                        <div className="flex items-start mb-3 pb-3">
+                            <a href="#" className="inline-block mr-3">
+                                <div className="w-64 h-30 bg-cover bg-center relative" >
                                 <Image className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110 vides-img"
                                     src={Video3} alt="Picture of the Videos" />
                                 <div className=''>
@@ -94,15 +93,15 @@ export default function videos() {
                                 </div>
                                 </div>
                             </a>
-                            <div class="text-sm mt-2">
+                            <div className="text-sm mt-2">
                                
-                                <a href="#" class="text-gray-900 font-bold hover:text-indigo-600 leading-5">
+                                <a href="#" className="text-gray-900 font-bold hover:text-indigo-600 leading-5">
                                     <div>Cristiano Ronaldo :
                                     <p className=''> of Juventus FC looks dejected during the...</p> 
                                     </div>
                                 </a>
-                                <div class="flex items-end">
-                                    <p class="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
+                                <div className="flex items-end">
+                                    <p className="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
                                 </div>
                             </div>
                         </div>
