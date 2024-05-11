@@ -6,9 +6,9 @@ import Letter from '../../public/logo/newsLetter2.png'
 export default function newsletter() {
     return (
       <>
-      <div className=' newsLetter'>
+      <div className='news newsLetter'>
         <div className="container max-w-screen-xl mx-auto relative">
-        <div className="grid grid-cols-1 sm:grid-cols-12 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-12 ">
             <div className="sm:col-span-4 flex justify-center items-center">
                 <Image src={Letter} alt={''} 
                 className='transition duration-300 ease-in-out hover:scale-110 w-3/4 '></Image>
@@ -34,6 +34,10 @@ export default function newsletter() {
                          dark:hover:bg-rose-600 dark:focus:ring-white-800">JE M’ABONNE</button>
 
                 </div>
+                         <div>
+                            <p className='mb-4'>En cliquant sur « je m’abonne », j’accepte que les données recueillies par Hit Radio soient destinées à l’envoi par courrier électronique de contenus et d&apos;informations relatifs aux programmes.  
+                           <a className='text-right direction-rtl' href="">Plus d’informations</a> </p>
+                         </div>
                 {/* <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required /> */}
 
             </div>

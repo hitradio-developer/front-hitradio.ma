@@ -10,16 +10,16 @@ import Play from '../../public/logo/Play.png'
 export default function videos() {
     return (
       <>
-      <div className='news bg-gray-300'>
+      <div className='news'>
         <div className="container mx-auto px-2">
             <h2 className='py-4'>Vidéos</h2>
             <div className="max-w-screen-xl mx-auto relative">
                 <div className="grid grid-cols-1 sm:grid-cols-12 gap-10">
-                    <div className="sm:col-span-6 lg:col-span-7">
+                    <div className="sm:col-span-6 lg:col-span-6 ">
                         <a href="#">
-                            <div className="bg-cover text-center overflow-hidden rounded-lg relative h-96 image-container"
+                            <div className="bg-cover text-center rounded-lg transition-all duration-300 hover:scale-110  relative h-96 image-container"
                             title="Woman holding a mug">
-                                <Image className="w-full h-auto relative z-0 transition-all duration-300 hover:opacity-50 vides-img"
+                                <Image className="w-full h-auto relative z-0  vides-img"
                                 src={Video2} alt="Picture of the Videos" />
                                 <div className='paly-video'>
                                 <Image className='' src={Play} alt='Play video' />
@@ -38,73 +38,99 @@ export default function videos() {
                             </div>
                         </div>
                     </div>
-                    <div className="sm:col-span-6 lg:col-span-5">
-                        <div className="flex items-start mb-3 pb-3">
+                    <div className="sm:col-span-6 lg:col-span-3">
+                        <div className=" items-start mb-3 pb-3">
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-64 h-30 bg-cover bg-center relative" >
-                                <Image className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110 vides-img"
+                                <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
+                                <Image className="w-full h-auto relative z-0 rounded-lg 
+                                vides-img"
                                     src={Video1} alt="Picture of the Videos" />
-                                <div className=''>
-                                <Image className='paly-video-mini' src={Play} alt='Play video' />
-                                </div>
+                                    <div className=''>
+                                    <Image className='paly-video-mini' src={Play} alt='Play video' />
+                                    </div>
                                 </div>
                             </a>
-                            <div className="text-sm mt-2">
-                               
+                            <div className="text-sm ">
                                 <a href="#" className="text-gray-900 font-bold hover:text-indigo-600 leading-5">
                                     <div>Cristiano Ronaldo :
                                     <p className=''> of Juventus FC looks dejected during the...</p> 
                                     </div>
                                 </a>
                                 <div className="flex items-end">
-                                    <p className="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
+                                    <p className="text-gray-600 text-xs mt-2">Le 09/04/2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-start mb-3 pb-3">
+                        <div className=" items-start mb-3 pb-3">
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-64 h-30 bg-cover bg-center relative" >
-                                <Image className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110 vides-img"
-                                    src={Video2} alt="Picture of the Videos" />
-                                <div className=''>
-                                <Image className='paly-video-mini' src={Play} alt='Play video' />
-                                </div>
+                                <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
+                                <Image className="w-full h-auto relative z-0 rounded-lg 
+                                vides-img"
+                                    src={Video1} alt="Picture of the Videos" />
+                                    <div className=''>
+                                    <Image className='paly-video-mini' src={Play} alt='Play video' />
+                                    </div>
                                 </div>
                             </a>
-                            <div className="text-sm mt-2">
-                               
+                            <div className="text-sm ">
                                 <a href="#" className="text-gray-900 font-bold hover:text-indigo-600 leading-5">
                                     <div>Cristiano Ronaldo :
                                     <p className=''> of Juventus FC looks dejected during the...</p> 
                                     </div>
                                 </a>
                                 <div className="flex items-end">
-                                    <p className="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
+                                    <p className="text-gray-600 text-xs mt-2">Le 09/04/2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-start mb-3 pb-3">
+                        
+                    </div>
+                    <div className="sm:col-span-6 lg:col-span-3">
+                        <div className=" items-start mb-3 pb-3">
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-64 h-30 bg-cover bg-center relative" >
-                                <Image className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110 vides-img"
-                                    src={Video3} alt="Picture of the Videos" />
-                                <div className=''>
-                                <Image className='paly-video-mini' src={Play} alt='Play video' />
-                                </div>
+                                <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
+                                <Image className="w-full h-auto relative z-0 rounded-lg 
+                                vides-img"
+                                    src={Video1} alt="Picture of the Videos" />
+                                    <div className=''>
+                                    <Image className='paly-video-mini' src={Play} alt='Play video' />
+                                    </div>
                                 </div>
                             </a>
-                            <div className="text-sm mt-2">
-                               
+                            <div className="text-sm ">
                                 <a href="#" className="text-gray-900 font-bold hover:text-indigo-600 leading-5">
                                     <div>Cristiano Ronaldo :
                                     <p className=''> of Juventus FC looks dejected during the...</p> 
                                     </div>
                                 </a>
                                 <div className="flex items-end">
-                                    <p className="text-gray-600 text-xs mt-4 py-4">Le 09/04/2024</p>
+                                    <p className="text-gray-600 text-xs mt-2">Le 09/04/2024</p>
                                 </div>
                             </div>
                         </div>
+                        <div className=" items-start mb-3 pb-3">
+                            <a href="#" className="inline-block mr-3">
+                                <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
+                                <Image className="w-full h-auto relative z-0 rounded-lg 
+                                vides-img"
+                                    src={Video1} alt="Picture of the Videos" />
+                                    <div className=''>
+                                    <Image className='paly-video-mini' src={Play} alt='Play video' />
+                                    </div>
+                                </div>
+                            </a>
+                            <div className="text-sm ">
+                                <a href="#" className="text-gray-900 font-bold hover:text-indigo-600 leading-5">
+                                    <div>Cristiano Ronaldo :
+                                    <p className=''> of Juventus FC looks dejected during the...</p> 
+                                    </div>
+                                </a>
+                                <div className="flex items-end">
+                                    <p className="text-gray-600 text-xs mt-2">Le 09/04/2024</p>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
                 <div className='plus'>

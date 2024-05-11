@@ -11,7 +11,7 @@ import NextNews from '../../public/logo/Arrow-3x.png'
 export default function event() {
     return (
       <>
-      <div className='event'>
+      <div className='news event'>
         <div className="container mx-auto px-5 py-2">
             <div className="flex flex-wrap sm:m-2 md:-m-2">
                 <div className='w-full sm:w-1/2 py-4'>
