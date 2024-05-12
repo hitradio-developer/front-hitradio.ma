@@ -1,15 +1,13 @@
-import Image from 'next/image';
-import Slide1 from '../../public/slide.jpeg'
+import Slide from '../../public/slide.jpeg'
+import Image from 'next/image'
 
-
-export default function Slide() {
-  return (
-    <>
-        <div className="">
-            <div className="">
-            <Image src={Slide1} alt={''} className=''></Image>
-            </div>
-        </div>
-    </>
-  );
-}
+export default function Footer() {
+    return (
+      <>
+      <div>
+        <Image className='img-slide' src={Slide}  alt=''/>
+      </div>
+      </>
+    );
+  }
+  

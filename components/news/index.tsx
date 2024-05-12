@@ -3,13 +3,17 @@ import News1 from '../../public/images/news1.jpeg'
 import News2 from '../../public/images/news2.jpeg'
 import News3 from '../../public/images/news3.jpeg'
 import News4 from '../../public/images/news4.jpeg'
+import News01 from '../../public/images/news01.jpg'
+import News02 from '../../public/images/news02.jpg'
+import News03 from '../../public/images/news03.jpg'
+import News04 from '../../public/images/news04.jpg'
 import NextNews from '../../public/logo/Arrow-3x.png'
 
 
 export default function news() {
     return (
       <>
-      <div className='news web-radio'>
+      <div className='news '>
         <div className="container max-w-screen-xl mx-auto p-5 relative">
             <h2 className='py-4'>News</h2>
             <div className="grid grid-cols-1 sm:grid-cols-12 gap-5">
@@ -45,7 +49,8 @@ export default function news() {
                             </div>
                         </a>
                         <a href="#"
-                            className="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Trump
+                            className="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                                Trump
                             Steps Back Into Coronavirus Spotlight</a>
                     </div>
                     <div className="">
@@ -54,12 +59,12 @@ export default function news() {
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
-                                    src={News3} alt="Picture of the News" />
+                                    src={News01} alt="Picture of the News" />
                             </div>
                         </a>
                         <a href="#"
-                            className="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Trump
-                            Steps Back Into Coronavirus Spotlight</a>
+                            className="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                           مليون من الشباب المغاربة، منقطعين على الدراسة </a>
                     </div>
                     <div className="">
                         <a href="#">
@@ -80,7 +85,7 @@ export default function news() {
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
-                                    src={News2} alt="Picture of the News" />
+                                    src={News02} alt="Picture of the News" />
                             </div>
                         </a>
                         <a href="#"
@@ -93,7 +98,7 @@ export default function news() {
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
-                                    src={News2} alt="Picture of the News" />
+                                    src={News03} alt="Picture of the News" />
                             </div>
                         </a>
                         <a href="#"
@@ -106,12 +111,12 @@ export default function news() {
                                 // style="backgroundImage: url('https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1')"
                                 title="Woman holding a mug">
                                      <Image className="transition duration-300 ease-in-out  news-img"
-                                    src={News2} alt="Picture of the News" />
+                                    src={News04} alt="Picture of the News" />
                             </div>
                         </a>
                         <a href="#"
-                            className="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">Trump
-                            Steps Back Into Coronavirus Spotlight</a>
+                            className="text-gray-900 inline-block font-semibold text-md my-2 hover:text-indigo-600 transition duration-500 ease-in-out">
+                                 القصة الكاملة لقضية مومو و فبركة سرقة على الهواء مباشرة</a>
                     </div>
                 </div>
 
