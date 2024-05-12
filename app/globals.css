@@ -262,13 +262,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 300ms ease-in-out;
-    width: 126px;
-    height: 125px;
+    width: 80px;
+    /* height: 125px; */
     color: transparent;
 }
 .paly-video-mini{
   position: absolute;
-  width: 79px;
+  width: 60px;
   top: 50%;
   left: 50%;
     transform: translate(-50%, -50%);
@@ -308,9 +308,9 @@ body {
 .plus img{
   box-shadow:none
 }
-.podcast-first{
+/* .podcast-first{
 
-}
+} */
 .glide__arrow {
   position: absolute;
   display: block;
@@ -345,6 +345,9 @@ body {
 @media only screen and (max-width: 768px) {
   .container .carousel-items {
     animation: carouselAnim 60s infinite alternate linear;
+  }
+  .lower-fixed-section {
+    width: 100% !important;
   }
   @keyframes carouselAnim {
     from {
@@ -497,17 +500,16 @@ width: 100%;
   .scrolled .sticky-pub-image-right,.scrolled .sticky-pub-image-left{
     position: fixed;
   }
-  .lower-fixed-section{
+  /* .lower-fixed-section{
     
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #000000; /* Set background color as needed */
-    padding: 20px;
-    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
-    z-index: 999; /* Optional: Adjust z-index if needed */
-  }
+    background-color: #000000; 
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
+  } */
   .player-audio {
     max-width:99px ;
     position: absolute;
@@ -516,6 +518,39 @@ width: 100%;
     transform: translate(-50%, -50%);
   }
   .live-hit{
-    max-width: 80px;
-    border-radius: 14%;
+    /* max-width: 80px; */
+    /* border-radius: 14%; */
+    display: flex;
+  align-items: center;
   }
+
+.img-live{
+    width: 39px;
+    margin: 9px;
+    border-radius: 8px;
+}
+/* .player-audio:hover{
+ opacity:initial;
+ width: 46px;
+} */
+
+.live-hit ul{
+  font-size: 13px;
+  color: white;
+}
+
+.lower-fixed-section {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  border-radius: 10px;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 67%;
+  /* max-width: 400px; */
+  background-color: var(--player-background-color);
+  background-color: #640000;
+  /* padding: 20px; */
+  /* box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); */
+  z-index: 999;
+}
