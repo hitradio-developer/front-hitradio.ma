@@ -24,8 +24,8 @@ export default function Slide() {
   return (
     <>
         <div className="sliderHome">
-            <div className="container max-w-screen-xl mx-auto p-5 relative">
-                <h2 className='py-4 font-medium text-center text-3xl mb-4'>Découvre aussi nos opérations</h2>
+            <div className="container mx-auto p-5 relative">
+                <h2 className='py-4 font-medium text-center text-3xl mb-4'>Découvrez aussi nos opérations</h2>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}
@@ -41,9 +41,9 @@ export default function Slide() {
                           spaceBetween: 40,
                         }
                       }}
-                    className="mySwiper mb-4" >
+                    className="mb-4" >
                     <SwiperSlide className=''>
-                        <Image src={Slide1} alt={''} className='transition duration-300 ease-in-out hover:scale-110'></Image>
+                        <Image src={Slide1} alt={''} className='transition duration-300 ease-in-out hover:scale-110 w-[280px]'></Image>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image src={Slide2} alt={''} className='transition duration-300 ease-in-out hover:scale-110'></Image>

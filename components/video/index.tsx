@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import Video1 from '../../public/video/video1.jpg'
-import Video4 from '../../public/video/Jro7i.jpg'
+import Video4 from '../../public/video/jul-battistu.jpg'
 import Video2 from '../../public/video/video2.jpeg'
 import Video3 from '../../public/video/vide3.jpeg'
 import NextNews from '../../public/logo/Arrow-3x.png'
 import Play from '../../public/logo/Play.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function videos() {
@@ -14,36 +16,34 @@ export default function videos() {
         <div className="container mx-auto px-2">
             <h2 className='py-4'>Vidéos</h2>
             <div className="max-w-screen-xl mx-auto relative">
-                <div className="grid grid-cols-1 sm:grid-cols-12 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
                     <div className="sm:col-span-6 lg:col-span-6 ">
                         <a href="#">
                             <div className="bg-cover text-center rounded-lg transition-all duration-300 hover:scale-110  relative h-96 image-container"
                             title="Woman holding a mug">
                                 <Image className="w-full h-auto relative z-0  vides-img"
-                                src={Video2} alt="Picture of the Videos" />
+                                src={Video1} alt="Picture of the Videos" />
                                 <div className='paly-video'>
                                 <Image className='' src={Play} alt='Play video' />
                                 </div>
                             </div>
                         </a>
-                        <div
-                            className="mt-3 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                        <div className="mt-3 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
                             <div className="">
-                                
-                            <a href="#" className="block text-gray-900 font-bold text-2xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Revenge
-                                of the Never Trumpers
-                            </a>
-                                <p className="text-gray-700 text-base mt-2">Meet the Republican dissidents fighting to push Donald Trump
-                                out of office—and reclaim their party</p>
+                                <a href="#" className="block text-gray-900 font-bold text-2xl mb-2 hover:text-indigo-600 transition duration-500 ease-in-out">Revenge
+                                    of the Never Trumpers
+                                </a>
+                                    <p className="text-gray-700 text-base mt-2">Meet the Republican dissidents fighting to push Donald Trump
+                                    out of office—and reclaim their party</p>
                             </div>
                         </div>
                     </div>
-                    <div className="sm:col-span-6 lg:col-span-3">
+                    <div className="sm:col-span-6 lg:col-span-3 ">
                         <div className=" items-start mb-3 pb-3">
                             <a href="#" className="inline-block mr-3">
                                 <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
-                                <Image className="w-full h-auto relative z-0 rounded-lg 
-                                vides-img"
+                                <Image className="w-full h-auto relative z-0 rounded-lg img-second-vedio
+                               "
                                     src={Video1} alt="Picture of the Videos" />
                                     <div className=''>
                                     <Image className='paly-video-mini' src={Play} alt='Play video' />
@@ -64,9 +64,9 @@ export default function videos() {
                         <div className=" items-start mb-3 pb-3">
                             <a href="#" className="inline-block mr-3">
                                 <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
-                                <Image className="w-full h-auto relative z-0 rounded-lg 
+                                <Image className="w-full h-auto relative z-0 rounded-lg img-second-vedio
                                 vides-img"
-                                    src={Video1} alt="Picture of the Videos" />
+                                    src={Video3} alt="Picture of the Videos" />
                                     <div className=''>
                                     <Image className='paly-video-mini' src={Play} alt='Play video' />
                                     </div>
@@ -89,9 +89,8 @@ export default function videos() {
                         <div className=" items-start mb-3 pb-3">
                             <a href="#" className="inline-block mr-3">
                                 <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
-                                <Image className="w-full h-auto relative z-0 rounded-lg 
-                                vides-img"
-                                    src={Video1} alt="Picture of the Videos" />
+                                <Image className="w-full h-auto relative z-0 rounded-lg img-second-vedio "
+                                    src={Video2} alt="Picture of the Videos" />
                                     <div className=''>
                                     <Image className='paly-video-mini' src={Play} alt='Play video' />
                                     </div>
@@ -111,9 +110,8 @@ export default function videos() {
                         <div className=" items-start mb-3 pb-3">
                             <a href="#" className="inline-block mr-3">
                                 <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
-                                <Image className="w-full h-auto relative z-0 rounded-lg 
-                                vides-img"
-                                    src={Video1} alt="Picture of the Videos" />
+                                <Image className="w-full h-auto relative z-0 rounded-lg img-second-vedio"
+                                    src={Video4} alt="Picture of the Videos" />
                                     <div className=''>
                                     <Image className='paly-video-mini' src={Play} alt='Play video' />
                                     </div>

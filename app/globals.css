@@ -160,7 +160,7 @@ body {
 .news h2 {
     font-size: 30px;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .podcast{
   background: #e6e6e6;
@@ -190,8 +190,7 @@ body {
   padding-bottom: 33px;
 }
 .plus{
-  text-align: end;
-  
+  text-align: end; 
 }
 .logo-end-center{
   text-align: center;
@@ -199,12 +198,19 @@ body {
 }
 .plus-event{
   text-align: end;
-  color: white;
+  color: black;
+  font-weight: 600;
  
+}
+.event-date{
+  position: absolute;
+  color: white;
+  padding: 7px;
+  background: #1f1e1c;
+  border-radius: 0 0 20px 0px;
 }
 .plus-red{
   color: #e30613;
- 
 }
 .img-plus{
   display: initial;
@@ -214,13 +220,11 @@ body {
   position: absolute;
   -webkit-filter: drop-shadow(5px 5px 5px #222222);
   filter: drop-shadow(5px 5px 5px #222222);
- 
 }
 
 .podcast-img{
   width: 94%;
   border-radius: 3%;
-  
 }
 @media (min-width: 1536px) {
   .container {
@@ -277,11 +281,14 @@ body {
     color: transparent;
 }
 
-
+.img-second-vedio {
+  width: 318px;
+  height: 147px;
+    object-fit: cover;
+}
 .event{
   /* background-image: url("../public/logo/event2.png"); */
-  background-image: url("../public/logo/event.jpg");
-
+ background-image: url("../public/logo/event.jpg");
  background-position: center;
  background-repeat: no-repeat;
  background-attachment: fixed;
@@ -293,6 +300,15 @@ body {
 .img-first-event{
   max-height: 290px;
 }
+
+.img-second-event{
+  height: 193px;
+}
+
+.img-first-event:hover,.img-second-event:hover{
+  opacity: 0.5;
+}
+
 .event h2{
     /* text-align: center; */
     color: white;
@@ -511,7 +527,8 @@ width: 100%;
     z-index: 999; 
   } */
   .player-audio {
-    max-width:99px ;
+    background-color: unset;
+    max-width: 78px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -525,7 +542,7 @@ width: 100%;
   }
 
 .img-live{
-    width: 39px;
+    width: 63px;
     margin: 9px;
     border-radius: 8px;
 }
@@ -543,14 +560,17 @@ width: 100%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   border-radius: 10px;
-  top: 96%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 67%;
   /* max-width: 400px; */
   background-color: var(--player-background-color);
-  background-color: #640000;
+  background-color: #040320;
   /* padding: 20px; */
   /* box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); */
   z-index: 999;
 }
+
+
+    

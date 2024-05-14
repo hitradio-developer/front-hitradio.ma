@@ -1,9 +1,16 @@
+"use client";
 import Image from 'next/image'
 import Player from '../../public/logo/Play.png'
 import Hitradio from '../../public/podcast/podcats1.jpeg'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faVolumeUp } from '@fortawesome/free-solid-svg-icons';
+
+import AudioPlayer from './AudioPlayer';
 
 export default function Live() {
+    
     return (
       <>
       <div>
@@ -18,15 +25,10 @@ export default function Live() {
                 <li>Adrenalina</li>
                 <li>BABY GANG / BLANCO / MARRACASH</li>
             </ul>
-                
             </div>
-            <div className="player-audio">
-            <Link href='#'>
-
-                <Image src={Player} alt={''} 
-                className='w-[40px]'></Image>
-            </Link>
-            </div>
+           <div className="player-audio ">
+               <AudioPlayer src="https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3" />    
+           </div>
         </div>
       </div>
       </>

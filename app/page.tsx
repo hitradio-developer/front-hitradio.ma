@@ -22,8 +22,14 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import React, { useState, useEffect } from 'react';
 
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
  config.autoAddCss = false;
 
+ library.add(fab, fas);
 
 
 
@@ -56,7 +62,7 @@ export default function Home() {
     
     <Header></Header>
     <SlideHomaPage></SlideHomaPage>
-    {/* <Left></Left> */}
+    <Left></Left>
     <Twiter></Twiter>
     <Pub></Pub>
     <News></News>

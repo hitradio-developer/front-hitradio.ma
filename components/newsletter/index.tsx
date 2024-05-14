@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import Letter from '../../public/logo/newsLetter2.png'
+import Letter2 from '../../public/logo/newsLetter2.png'
+import Letter from '../../public/logo/Emails-amico.png'
 
 
 

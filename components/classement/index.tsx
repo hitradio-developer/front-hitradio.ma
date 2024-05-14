@@ -32,7 +32,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">1</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Video1} alt="Picture of the Videos" />
                                 </div>
@@ -51,7 +51,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">2</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Video2} alt="Picture of the Videos" />
                                 </div>
@@ -70,7 +70,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">3</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Video3} alt="Picture of the Videos" />
                                 </div>
@@ -91,7 +91,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">4</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Classement1} alt="Picture of the Videos" />
                                 </div>
@@ -110,7 +110,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">5</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Classement2} alt="Picture of the Videos" />
                                 </div>
@@ -129,7 +129,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">6</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Classement3} alt="Picture of the Videos" />
                                 </div>
@@ -150,7 +150,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">7</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Classement4} alt="Picture of the Videos" />
                                 </div>
@@ -169,7 +169,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">8</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Classement5} alt="Picture of the Videos" />
                                 </div>
@@ -188,7 +188,7 @@ export default function classement() {
                                 <p className="text-gray-600 text-3xl">9</p>
                             </div>
                             <a href="#" className="inline-block mr-3">
-                                <div className="w-[110px] bg-cover bg-center relative shadow-lg " >
+                                <div className="w-[103px] bg-cover bg-center relative shadow-lg " >
                                 <Image className="w-full relative z-0 rounded-lg object-cover transition-all duration-300 h-[94px] "
                                 src={Classement6} alt="Picture of the Videos" />
                                 </div>
