@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <>
     <div className='foot'>
-        <div className="container mx-auto px-2 mb-20">
+        <div className="container mx-auto px-2 mb-24 ">
           <div className="text-center title-footer grid grid-cols-4 sm:grid-cols-4 mt-6">
             {/* <div className='logo-hr-footer'>
             <Image className=''
@@ -67,8 +67,7 @@ export default function Footer() {
             <Link href=""><ul><Image className='social-media-img' src={Logo5} alt=""/></ul></Link>
             <Link href=""><ul><Image className='social-media-img' src={Logo6} alt=""/></ul></Link>
           </div>
-          
-          <div className="title-reglement grid grid-cols-12 mb-8">
+          <div className="title-reglement grid grid-cols-12">
             <h3>Tous les drois © 2024. HIT RADIO.</h3>
           </div>
         </div>

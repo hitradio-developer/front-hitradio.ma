@@ -14,7 +14,7 @@ export default function newsletter() {
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
             
             <div className="sm:col-span-12 text-white">
-                <h2 className='py-4 font-medium text-3xl text-center text-white mb-4'>Vous pouvez télécharger nos applications</h2>
+                <h2 className='py-4 font-medium text-3xl text-center text-white mb-4'> Téléchargez nos applications</h2>
             </div>
             <div className="sm:col-span-12">
               <div className="title-reglement gap-2 mb-4 ">
