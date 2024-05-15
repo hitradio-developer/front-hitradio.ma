@@ -64,6 +64,7 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
+  padding: 38px !important;
 }
 
 .swiper-slide {
@@ -78,9 +79,10 @@ body {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 205px;
+  /* width: 100%;
+  height: 100%; */
+  width: 260px !important;
+  min-height: 172px;
   object-fit: cover;
   border-radius: 3%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5)
@@ -121,12 +123,25 @@ body {
   width: 100%;
   object-fit: cover;
 }
-
+.twiter-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img-twiter{
-  height: 363px;
+  height: 324px;
+  width: 184px;
   box-shadow: 10px 10px 5px #91979996;
   border-radius: 3%;
-  
+}
+.event-twiter-econ{
+  position: absolute;
+  color: white;
+  padding: 7px;
+  color: #f02e0c;
+  font-size: 24px;
+  background: #beca16;
+  border-radius: 0 0 20px 0px;
 }
 .img-twiter-hover:hover {
   opacity: 0.5;
@@ -491,19 +506,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  /* Adjust width and height as needed */
   width: 200px; /* Width of the sticky image */
   height: auto; /* Maintain aspect ratio */
+  z-index: 99;
 }
 
 .sticky-pub-image-right {
   position: absolute;
   top: 0;
   right: 0;
- 
-  /* Adjust width and height as needed */
   width: 200px; /* Width of the sticky image */
   height: auto; /* Maintain aspect ratio */
+  z-index: 99;
 }
 .sticky-pub-image-right img{
 width: 100%;
@@ -573,4 +587,14 @@ width: 100%;
 }
 
 
+.swiper-button-next:after,.swiper-button-prev:after {
+  content: 'next';
+  font-size: 20px !important;
+  color: black;
+  font-weight: 900;
+}
+
+.swiper-button-next,.swiper-button-prev {
+  width: 0 !important;
+}
     

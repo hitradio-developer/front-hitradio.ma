@@ -14,7 +14,7 @@ export default function operation() {
       <>
     <div className="news web-radio">
         <div className="container mx-auto px-2">
-            <h2 className="py-4" style={{ fontFamily: "'Dancing Script', cursive, sans-serif" }} >
+            <h2 className="py-4" >
                Web Radios
             </h2>
             <div className="w-full overflow-hidden relative">

@@ -62,7 +62,7 @@ export default function Home() {
     
     <Header></Header>
     <SlideHomaPage></SlideHomaPage>
-    <Left></Left>
+    {/* <Left></Left> */}
     <Twiter></Twiter>
     <Pub></Pub>
     <News></News>

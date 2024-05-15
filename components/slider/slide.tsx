@@ -43,22 +43,22 @@ export default function Slide() {
                       }}
                     className="mb-4" >
                     <SwiperSlide className=''>
-                        <Image src={Slide1} alt={''} className='transition duration-300 ease-in-out hover:scale-110 w-[280px]'></Image>
+                        <Image src={Slide1} alt={''} className='transition duration-300 ease-in-out'></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={Slide2} alt={''} className='transition duration-300 ease-in-out hover:scale-110'></Image>
+                        <Image src={Slide2} alt={''} className='transition duration-300 ease-in-out'></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={Slide3} alt={''} className='transition duration-300 ease-in-out hover:scale-110'></Image>
+                        <Image src={Slide3} alt={''} className='transition duration-300 ease-in-out '></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={Slide4} alt={''} className='transition duration-300 ease-in-out hover:scale-110'></Image>
+                        <Image src={Slide4} alt={''} className='transition duration-300 ease-in-out '></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={Slide5} alt={''} className='transition duration-300 ease-in-out hover:scale-110'></Image>
+                        <Image src={Slide5} alt={''} className='transition duration-300 ease-in-out '></Image>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src={Slide6} alt={''} className='transition duration-300 ease-in-out hover:scale-110'></Image>
+                        <Image src={Slide6} alt={''} className='transition duration-300 ease-in-out '></Image>
                     </SwiperSlide>
                 </Swiper>
                 <div className='logo-end-center'>

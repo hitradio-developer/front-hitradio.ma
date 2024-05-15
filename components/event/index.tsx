@@ -13,7 +13,7 @@ export default function event() {
     return (
       <>
       <div className='event'>
-        <div className="container mx-auto ">
+        <div className="container mx-auto">
             <div className="flex flex-wrap sm:m-2 md:-m-2">
                 <div className='w-full sm:w-1/2 py-4'>
                     <h2 className='ml-2 mb-4'>Evénements</h2>
