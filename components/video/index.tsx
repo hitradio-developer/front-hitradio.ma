@@ -16,10 +16,11 @@ export default function videos() {
         <div className="container mx-auto px-2">
             <h2 className='py-4'>Vidéos</h2>
             <div className="max-w-screen-xl mx-auto relative">
-                <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-8">
                     <div className="sm:col-span-6 lg:col-span-6 ">
                         <a href="#">
-                            <div className="bg-cover text-center rounded-lg transition-all duration-300 hover:scale-110  relative h-96 image-container"
+                            <div className="bg-cover text-center rounded-lg transition-all duration-300 hover:scale-110  
+                            relative h-96 image-container"
                             title="Woman holding a mug">
                                 <Image className="w-full h-auto relative z-0  vides-img"
                                 src={Video1} alt="Picture of the Videos" />
