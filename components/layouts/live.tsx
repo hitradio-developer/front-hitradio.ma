@@ -26,7 +26,7 @@ export default function Live() {
                 <li>BABY GANG / BLANCO / MARRACASH</li>
             </ul>
             </div>
-           <div className="player-audio ">
+           <div className="player-audio">
                <AudioPlayer src="https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3" />    
            </div>
         </div>
