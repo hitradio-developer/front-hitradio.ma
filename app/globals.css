@@ -542,17 +542,15 @@ width: 100%;
   } */
   .player-audio {
     background-color: unset;
-    max-width: 78px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 54%;
+    flex: 0 0 54%;
   }
   .live-hit{
     /* max-width: 80px; */
     /* border-radius: 14%; */
     display: flex;
-  align-items: center;
+    align-items: center;
+    flex: 1;
   }
 
 .img-live{
@@ -571,19 +569,19 @@ width: 100%;
 }
 
 .lower-fixed-section {
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
   position: fixed;
   border-radius: 10px;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 67%;
-  /* max-width: 400px; */
-  background-color: var(--player-background-color);
+  /* background-color: var(--player-background-color); */
   background-color: #040320;
-  /* padding: 20px; */
-  /* box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); */
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
