@@ -217,13 +217,7 @@ body {
   font-weight: 600;
  
 }
-.event-date{
-  position: absolute;
-  color: white;
-  padding: 7px;
-  background: #1f1e1c;
-  border-radius: 0 0 20px 0px;
-}
+
 .plus-red{
   color: #e30613;
 }
@@ -609,17 +603,25 @@ width: 100%;
   --max-container: calc(100% - var(--space4));
 }
 .event-label {
-  position: absolute;
+    position: absolute;
     bottom: 0px;
     left: 0%;
     width: 100%;
-    text-align: center;
+    text-align: center; 
     color: white;
     padding: 0.5rem;
     box-sizing: border-box;
     border-radius: 2%;
 }
-
+.event-date{
+  position: absolute;
+  box-sizing: border-box;
+  color: white;
+  padding: 7px;
+  background: #1f1e1c;
+  border-radius: 0 0 20px 0px;
+  z-index: 99;
+}
 
 .gradient-opacity img {
 
