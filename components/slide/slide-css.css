@@ -1,0 +1,12 @@
+.live-morning{
+    align-items: center;
+    background-color: rgb(var(--rgb-fix-grey-800) / .8);
+    bottom: 0;
+    display: flex;
+    height: 80px;
+    padding: var(--space2) 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    --max-container: calc(100% - var(--space4));
+}

@@ -4,8 +4,13 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faPlay, faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faPlay, faXmark, faBars, faSignal } from "@fortawesome/free-solid-svg-icons";
 import { Transition } from '@headlessui/react';
+
+
+import { faSignature} from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +39,10 @@ const Header = () => {
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PLUS</Link>
               </div>
             </div>
+            {/* <div className='click-live'>
+
+            <FontAwesomeIcon icon={faSignature} />
+            </div> */}
           </div>
           <div className="right-header flex justify-between items-center gap-2 sm:gap-4 ">
               <div>
@@ -54,6 +63,7 @@ const Header = () => {
               <div className="-mr-2 flex md:hidden">
                 <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center rounded-md text-gray-400 hover:text-red-500 focus:outline-none transition duration-150 ease-in-out text-2xl">
                   {!isOpen ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faXmark} />}  
+                
                 </button>
               </div>
           </div>
