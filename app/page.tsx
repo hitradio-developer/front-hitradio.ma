@@ -16,6 +16,7 @@ import Event from '@/components/event/index';
 import WebRadio from '@/components/webRadio/index';
 import NewsLetter from '@/components/newsletter/index';
 import Application from '@/components/appilcation/index';
+import Service from '@/components/slider/Service';
 import Live from '@/components/layouts/live';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -73,7 +74,8 @@ export default function Home() {
     <Pub2></Pub2>
     <WebRadio></WebRadio>
     <Event></Event>
-    <Slide></Slide>
+    <Service></Service>
+    {/* <Slide></Slide> */}
     <Application></Application>
     {/* <Operation></Operation> */}
     <Footer></Footer>

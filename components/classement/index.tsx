@@ -24,8 +24,7 @@ export default function classement() {
         <div className="container mx-auto px-2">
             <h2 className='py-4'>Classement</h2>
             <div className="max-w-screen-xl mx-auto relative">
-                <div className="grid grid-cols-1 sm:grid-cols-12 gap-10">
-                    
+                <div className="grid grid-cols-1 sm:grid-cols-12">
                     <div className="sm:col-span-2 lg:col-span-4">
                         <div className="flex items-start mb-3 pb-3">
                             <div className="text-sm m-4">
@@ -207,7 +206,7 @@ export default function classement() {
             </div>
             <div className='plus'>
                 <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="Picture of the News" width={40} />
-                <span>PLUS DE CLASSEMENT</span>
+                <span>TOUT LE CLASSEMENT</span>
             </div>
         </div>
        

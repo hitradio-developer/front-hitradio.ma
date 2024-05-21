@@ -29,6 +29,14 @@ export default function Live() {
            <div className="player-audio">
                <AudioPlayer src="https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3" />    
            </div>
+           <div>
+           <button className="bg-transparent  plus-radio-live
+          
+             px-2 border rounded m-2 p-1">
+            Plus <br /> de <br /> Radios
+            </button>
+           
+           </div>
         </div>
       </div>
       </>
