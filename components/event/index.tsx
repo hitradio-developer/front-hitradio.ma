@@ -6,7 +6,7 @@ import Event3 from '../../public/event/event3.jpg'
 import Concert1 from '../../public/event/concert1.jpg'
 import Concert2 from '../../public/event/concert2.png'
 import Concert3 from '../../public/event/concert3.jpg'
-import NextNews from '../../public/logo/Arrow-3x.png'
+import NextNews from '../../public/logo/Arrow-3x-white.png'
 
 
 export default function event() {
@@ -16,7 +16,7 @@ export default function event() {
         <div className="container mx-auto">
             <div className="flex flex-wrap sm:m-2 md:-m-2">
                 <div className='w-full sm:w-1/2 py-4'>
-                    <h2 className='ml-2 mb-4'>Evénements</h2>
+                    <h2 className='ml-2 mb-4'>Events</h2>
                     <div className="flex flex-wrap event-evenments">
                         <div className="flex flex-col w-1/2 p-1 relative gradient-opacity">
                             <span className="event-date">10 JUIN</span>  
@@ -50,13 +50,13 @@ export default function event() {
                             {/* <h3 className="text-center underline text-white ">Le Circuit Moulay El Hassan fait son Grand Retour avec le ...</h3> */}
                         </div>
                     </div>
-                    <div className='plus-event'>
+                    <div className='plus-event-white'>
                         <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="" width={40} />
                         <span>PLUS D EVÉNEMENTS </span>
                     </div>
                 </div>
                 <div className='w-full sm:w-1/2 py-4'>
-                        <h2 className='ml-2 mb-4'>Concerts</h2>
+                        <h2 className='ml-2 mb-4'>Music</h2>
                     <div className="flex flex-wrap event-evenments">
                         <div className="w-full p-1 img-first-event relative gradient-opacity">
                         <span className="event-date">05 AVRIL</span>  
@@ -85,7 +85,7 @@ export default function event() {
                             <span className="event-label">AGADIR</span>
                         </div>
                     </div>
-                    <div className='plus-event'>
+                    <div className='plus-event-white'>
                         <Image className="img-plus flex items-end py-4 mr-4" src={NextNews} alt="" width={40} />
                         <span>PLUS DE CONCERTS</span>
                     </div>

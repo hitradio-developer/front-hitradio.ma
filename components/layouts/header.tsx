@@ -4,11 +4,14 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faPlay, faXmark, faBars, faSignal } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faPlay, faXmark, faBars, faSignal,faStream  } from "@fortawesome/free-solid-svg-icons";
 import { Transition } from '@headlessui/react';
+import Stream from '../../public/logo/live/live-streaming-white.png'
+
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 
-import { faSignature} from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -21,7 +24,7 @@ const Header = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center w-20 md:w-24">
+            <div className="flex-shrink-0 flex items-center w-20 md:w-20">
                 <Image
                     src="/logo/small-logo-hitradio_0.png" // Path to your image in the public directory
                     alt="Landwind Logo"
@@ -34,7 +37,7 @@ const Header = () => {
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base" aria-current="page">RADIOS</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PODCASTS</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">NEWS</Link>
-                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">EVÉNEMENTS</Link>
+                  <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">EVENTS</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">JEUX</Link>
                   <Link href="#" className="text-red-700 font-bold block hover:text-red-200 px-3 py-2 rounded-md text-base">PLUS</Link>
               </div>
@@ -46,12 +49,14 @@ const Header = () => {
           </div>
           <div className="right-header flex justify-between items-center gap-2 sm:gap-4 ">
               <div>
-                <button className="text-red-700 font-bold flex items-center gap-2 sm:gap-4">
-                 LIVE <div className='flex items-center justify-center rounded-full bg-gray-500 w-12 h-12'><FontAwesomeIcon icon={faPlay} className='text-white' /> </div>
+                <button className="btn btn-live-icon flex items-center gap-2 sm:gap-4">
+                  <div className='flex items-center justify-center w-8 h-12 '>
+                    <Image src={Stream} alt='' />
+                    </div>
                 </button>  
               </div>
               <div>
-                <Link href="#" className='btn btn-primary px-4 sm:px-8 rounded-full bg-gray-500 text-white hover:bg-transparent hover:border-red-700 hover:text-red-700  outline-none border-gray-500'>NOS FRÉQUENCES</Link>
+                <Link href="#" className='btn btn-reference'>NOS <br /> FRÉQUENCES</Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-4 flex items-center md:ml-6 size-7">

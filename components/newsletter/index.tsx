@@ -18,7 +18,7 @@ export default function newsletter() {
                 <h2 className='py-4 font-medium text-3xl text-white mb-4'>La Newsletter Hitradio</h2>
                 <p className='mb-4'>
                 Plongez au cœur de l&apos;univers de vos artistes préférés ! 
-                Ne manquez plus aucune actualité et découvrez des surprises exclusives chaque semaine
+                Ne manquez plus aucune actualité et découvrez des surprises exclusives .
                 </p>
                 <div className="relative mb-6">
                     <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -33,11 +33,10 @@ export default function newsletter() {
                         hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
                         font-medium rounded-lg text-sm px-4 py-2 dark:bg-rose-600
                          dark:hover:bg-rose-600 dark:focus:ring-white-800">JE M’ABONNE</button>
-
                 </div>
                          <div>
-                            <p className='mb-4'>En cliquant sur « je m’abonne », j’accepte que les données recueillies par Hit Radio soient destinées à l’envoi par courrier électronique de contenus et d&apos;informations relatifs aux programmes.  
-                           <a className='text-right direction-rtl' href="">Plus d’informations</a> </p>
+                            <p className='mb-4'>En cliquant sur « je m’abonne », j’accepte que les données recueillies par Hit Radio soient destinées à l’envoi par courrier électronique de contenus et d&apos;informations .  
+                          <br /> <a className='text-right direction-rtl' href="">Plus d’informations</a> </p>
                          </div>
                 {/* <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required /> */}
 
