@@ -22,7 +22,33 @@ export default function classement() {
       <>
       <div className='news classement'>
         <div className="container mx-auto px-2">
-            <h2 className='py-4'>Classement</h2>
+            <div className='py-4'>
+
+            <h2 className=''>Classement</h2>
+            <div className='flex justify-between m-4'>
+                <div className=''>
+                    <div className='btn btn-outline text-red-600 mr-4'>
+                        top 20
+                    </div>
+                    <div className='btn btn-outline text-red-600 mr-4'>
+                        top 30
+                    </div>
+                    <div className='btn btn-outline text-red-600 mr-4'>
+                        top Hit
+                    </div>
+                    <div className='btn btn-outline text-red-600 mr-4'>
+                        top Hit 2023
+                    </div>
+                </div>
+                <div className=' mb-8'>
+                    <Link href="#" >
+                        <FontAwesomeIcon icon={faHeart} className='mr-4' 
+                        style={{ color: 'antiquewhite', fontSize: '24px' }} />
+                         JE VOTE
+                    </Link>
+                </div>
+            </div>
+            </div>
             <div className="max-w-screen-xl mx-auto relative">
                 <div className="grid grid-cols-1 sm:grid-cols-12">
                     <div className="sm:col-span-2 lg:col-span-4">

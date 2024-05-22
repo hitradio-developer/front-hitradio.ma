@@ -1,12 +1,15 @@
 import Image from 'next/image'
-import Logo from '../../public/logo/small-logo-hitradio_0.png';
-import Logo1 from '../../public/logo/social-medi/Layer 1.png';
-import Logo2 from '../../public/logo/social-medi/Layer 2.png';
-import Logo3 from '../../public/logo/social-medi/Layer 3.png';
-import Logo4 from '../../public/logo/social-medi/Layer 4.png';
-import Logo5 from '../../public/logo/social-medi/Layer 5.png';
-import Logo6 from '../../public/logo/social-medi/Layer 6.png';
+
 import Link from 'next/link';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -59,13 +62,13 @@ export default function Footer() {
             <a href=""><ul>Publicité</ul></a>
             <a href=""><ul>Contact</ul></a>
           </div>
-          <div className="title-reglement grid grid-cols-12 gap-2 m-6">
-            <Link href=""><ul><Image className='social-media-img' src={Logo1} alt=""/></ul></Link>
-            <Link href=""><ul><Image className='social-media-img' src={Logo2} alt=""/></ul></Link>
-            <Link href=""><ul><Image className='social-media-img' src={Logo3} alt=""/></ul></Link>
-            <Link href=""><ul><Image className='social-media-img' src={Logo4} alt=""/></ul></Link>
-            <Link href=""><ul><Image className='social-media-img' src={Logo5} alt=""/></ul></Link>
-            <Link href=""><ul><Image className='social-media-img' src={Logo6} alt=""/></ul></Link>
+          <div className="title-reglement grid grid-cols-12 gap-2 m-6 ">
+            <Link href=""><ul><FontAwesomeIcon className='social-icon' icon={faInstagram} /> </ul></Link>
+            <Link href=""><ul><FontAwesomeIcon className='social-icon' icon={faTiktok} /></ul></Link>
+            <Link href=""><ul><FontAwesomeIcon className='social-icon' icon={faFacebook} /></ul></Link>
+            <Link href=""><ul><FontAwesomeIcon className='social-icon' icon={faLinkedin} /></ul></Link>
+            <Link href=""><ul><FontAwesomeIcon className='social-icon' icon={faYoutube} /></ul></Link>
+            <Link href=""><ul><FontAwesomeIcon className='social-icon' icon={faXTwitter} /></ul></Link>
           </div>
           <div className="title-reglement grid grid-cols-12">
             <h3>Tous les drois © 2024. HIT RADIO.</h3>
