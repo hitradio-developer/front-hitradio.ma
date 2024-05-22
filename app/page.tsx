@@ -74,7 +74,7 @@ export default function Home() {
     <Pub2></Pub2>
     <WebRadio></WebRadio>
     <Event></Event>
-    <Service></Service>
+    {/* <Service></Service> */}
     {/* <Slide></Slide> */}
     <Application></Application>
     {/* <Operation></Operation> */}

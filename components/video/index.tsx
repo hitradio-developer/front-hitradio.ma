@@ -112,7 +112,7 @@ export default function videos() {
                             <a href="#" className="inline-block mr-3">
                                 <div className="bg-cover bg-center relative transition-all duration-300 hover:scale-110 " >
                                 <Image className="w-full h-auto relative z-0 rounded-lg img-second-vedio"
-                                    src={Video4} alt="Picture of the Videos" />
+                                    src={Video1} alt="Picture of the Videos" />
                                     <div className=''>
                                     <Image className='paly-video-mini' src={Play} alt='Play video' />
                                     </div>
